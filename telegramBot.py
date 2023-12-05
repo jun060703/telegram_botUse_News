@@ -8,8 +8,8 @@ import time
 
 
 async def send_news():
-    bot = telegram.Bot(token='1')
-    chat_id = -1
+    bot = telegram.Bot(token='1')   #텔레그램 봇 토큰
+    chat_id = -1  #채팅방 ID토큰
     news_titles = get_news_titles()
     await bot.send_message(chat_id=chat_id, text='최신뉴스입니다.' "\n\n\n\n" + news_titles)
 
